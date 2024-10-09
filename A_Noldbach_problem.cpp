@@ -3,8 +3,7 @@ using namespace std;
 #define ll long long
 
 void solve() {
-    int n, k;
-    if (!(cin >> n >> k)) return;
+    int n, k; if (!(cin >> n >> k)) return;
 
     vector<bool> is_prime(n + 1, true);
     is_prime[0] = is_prime[1] = false;
