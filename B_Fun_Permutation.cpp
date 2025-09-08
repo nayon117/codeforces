@@ -4,12 +4,13 @@ using namespace std;
 
 void solve () {
    int n; cin >> n;
-   vector<int> a(n);
-   for (auto &i : a) cin >> i;
+   vector<int> p(n);
+   for (auto &i : p) cin >> i;
+
    for(int i = 0; i < n; i++) {
-    cout << a[i] << " ";
+    cout << (n + 1 - p[i]) << (i + 1 == n ? "\n": " ");
    }  
-   cout << '\n';
+   
 }
 
 int main() {

@@ -2,25 +2,14 @@
 using namespace std;
 #define ll long long
 
-int findDivisor (int n) {
-  if(n == 1) return 1; 
-
-  for(int i = 2; i * i <= n ; i++) 
-    if(n % i == 0)  return  n / i ;  
-
-  return n;
-}
 
 void solve () {
-  int a, b; cin >> a >> b;
+  ll a, b; cin >> a >> b;
 
-  int k = findDivisor(b); 
-  
-  int xa = a * k;
-  int xb = b / k;
-   
-   if((xa + xb) % 2 == 0) cout << xa + xb << '\n';
-   else cout << -1 << '\n';
+  if(a%2 && b % 2) cout << a*b + 1 << '\n';
+  else if(a % 2 == 0 && b % 2) cout << -1 << '\n';
+  else if(a % 2 == 0 && b%2 == 0 || b%4 == 0) cout << (2 + ((a*b) / 2)) << '\n';
+  else cout << -1 << '\n';
 }
 
 int main() {
