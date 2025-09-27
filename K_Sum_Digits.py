@@ -3,3 +3,4 @@ s = input()
 l = list(map(int,s))
 print(sum(l))
 
+
