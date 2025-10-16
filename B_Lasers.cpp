@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
 
 void solve () {
    int n, m; ll x, y;
@@ -17,3 +16,4 @@ int main() {
     while(t--) solve ();
     return 0;
 }
+
